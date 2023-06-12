@@ -14,10 +14,6 @@ module.exports = {
         exclude: [/node_modules/],
         loader: 'babel-loader'
       },
-      {
-        test: /\.glsl$/,
-        loader: 'webpack-glsl-loader'
-      }
     ]
   },
   plugins: [

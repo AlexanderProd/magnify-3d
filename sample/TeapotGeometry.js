@@ -391,7 +391,7 @@ export const TeapotBufferGeometry = function ( size, segments, bottom, lid, body
 		1.5, - 0.84, 0.075
 	];
 
-	THREE.BufferGeometry.call( this );
+	// THREE.BufferGeometry.call( this );
 
 	size = size || 50;
 

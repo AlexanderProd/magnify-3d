@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import * as dat from 'dat.gui';
 import Magnify3d from '../src/Magnify3d';
-import { TeapotBufferGeometry } from './TeapotGeometry';
+// import { TeapotBufferGeometry } from './TeapotGeometry';
 
 // FPS monitor
 javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
@@ -49,14 +49,14 @@ function initScene() {
     const sphereMesh = new THREE.Mesh(sphereGeometry, normalMaterial);
     scene.add(sphereMesh);
 
-    const teapotGeometry = new TeapotBufferGeometry(10, 32);
-    const teapotMesh1 = new THREE.Mesh(teapotGeometry, normalMaterial);
-    teapotMesh1.position.y = 50;
-    scene.add(teapotMesh1);
+    // const teapotGeometry = new TeapotBufferGeometry(10, 32);
+    // const teapotMesh1 = new THREE.Mesh(teapotGeometry, normalMaterial);
+    // teapotMesh1.position.y = 50;
+    // scene.add(teapotMesh1);
 
-    const teapotMesh2 = new THREE.Mesh(teapotGeometry, normalMaterial);
-    teapotMesh2.position.y = -50;
-    scene.add(teapotMesh2);
+    // const teapotMesh2 = new THREE.Mesh(teapotGeometry, normalMaterial);
+    // teapotMesh2.position.y = -50;
+    // scene.add(teapotMesh2);
 }
 
 function initCamera() {
