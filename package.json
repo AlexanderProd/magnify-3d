@@ -4,7 +4,7 @@
   "description": "Real time optic magnifying glass library.",
   "main": "build/Magnify3d.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.sample --devtool source-map --progress --hot --mode=development --host 0.0.0.0",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.sample --devtool source-map --progress --hot --mode=development --host 0.0.0.0 --openssl-legacy-provider",
     "build": "rm -rf ./build && cross-env NODE_ENV=rollup rollup -c",
     "build-sample": "NODE_ENV=production webpack --progress --config ./webpack.config.sample --mode=production",
     "deploy-sample": "npm run build-sample && gh-pages -d build/sample"
@@ -16,6 +16,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/three": "^0.160.0",
     "babel-cli": "6.23.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -39,8 +40,7 @@
     "webpack-dev-server": "^3.1.14",
     "webpack-glsl-loader": "1.0.1"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "files": [
     "package.json",
     "LICENSE",
